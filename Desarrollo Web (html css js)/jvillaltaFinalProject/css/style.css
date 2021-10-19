@@ -93,11 +93,11 @@
 }
 
 .container h1 {
-    font-size: 70pt;
+    font-size: 5vw;
 }
 
 .container p {
-    font-size: 16pt;
+    font-size: 1.3vw;
     padding-right: 30%;
     hyphens: manual;
     text-align: left;
