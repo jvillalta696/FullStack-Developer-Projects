@@ -439,6 +439,14 @@
     align-items: center;
 }
 
+.form .button {
+    align-self: center;
+}
+
+.title {
+    align-self: center;
+}
+
 form {
     background: aliceblue;
     padding: 8vw;
@@ -463,6 +471,14 @@ form {
     display: flex;
     flex-direction: column;
     padding: 0.5vw;
+}
+
+.select select {
+    border-radius: 10px;
+    width: 25vw;
+    height: 2vw;
+    border: none;
+    background-color: #d2dfec;
 }
 
 .input-text input {
