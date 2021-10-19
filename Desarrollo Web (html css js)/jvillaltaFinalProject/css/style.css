@@ -1,12 +1,23 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    margin: 0vw;
+    padding: 0vw;
+    list-style: none;
+    text-decoration: none;
     font-family: sans-serif;
+    box-sizing: border-box;
+    /* toma encuenta el tamaña del borde para decir que la caja ocupa el  100%*/
 }
 
 .page {
     width: 100vw;
     height: 100vh;
+}
+
+.grid-container {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
 }
 
 .header {
@@ -487,4 +498,240 @@ form {
     height: 2vw;
     border: none;
     background-color: #d2dfec;
+}
+
+
+/*=======================================================
+maqueta para el responsive desing
+
+=========================================================*/
+
+.row {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    /* clear: both; respeta el incluir solo las cajas flotantes que le corresponde a la fila*/
+    clear: both;
+    /*display: table; esta propiedad hace que la fila se comporte como una tabla y que sume altura*/
+    display: table;
+}
+
+
+/*todas las clases que inicien con col- van a tener esas propiedades*/
+
+[class*="col-"] {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .col-xs-12 {
+        width: 100%;
+    }
+    .col-xs-11 {
+        width: 91.66666666%;
+    }
+    .col-xs-10 {
+        width: 83.33333333%;
+    }
+    .col-xs-9 {
+        width: 75%;
+    }
+    .col-xs-8 {
+        width: 66.66666666%;
+    }
+    .col-xs-7 {
+        width: 58.33333333%;
+    }
+    .col-xs-6 {
+        width: 50%;
+    }
+    .col-xs-5 {
+        width: 41.66666666%;
+    }
+    .col-xs-4 {
+        width: 33.33333333%;
+    }
+    .col-xs-3 {
+        width: 25%;
+    }
+    .col-xs-2 {
+        width: 16.66666666%;
+    }
+    .col-xs-1 {
+        width: 8.3333333%;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .col-s-12 {
+        width: 100%;
+    }
+    .col-s-11 {
+        width: 91.66666666%;
+    }
+    .col-s-10 {
+        width: 83.33333333%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-8 {
+        width: 66.66666666%;
+    }
+    .col-s-7 {
+        width: 58.33333333%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-5 {
+        width: 41.66666666%;
+    }
+    .col-s-4 {
+        width: 33.33333333%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-2 {
+        width: 16.66666666%;
+    }
+    .col-s-1 {
+        width: 8.3333333%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .col-m-12 {
+        width: 100%;
+    }
+    .col-m-11 {
+        width: 91.66666666%;
+    }
+    .col-m-10 {
+        width: 83.33333333%;
+    }
+    .col-m-9 {
+        width: 75%;
+    }
+    .col-m-8 {
+        width: 66.66666666%;
+    }
+    .col-m-7 {
+        width: 58.33333333%;
+    }
+    .col-m-6 {
+        width: 50%;
+    }
+    .col-m-5 {
+        width: 41.66666666%;
+    }
+    .col-m-4 {
+        width: 33.33333333%;
+    }
+    .col-m-3 {
+        width: 25%;
+    }
+    .col-m-2 {
+        width: 16.66666666%;
+    }
+    .col-m-1 {
+        width: 8.3333333%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .col-lg-12 {
+        width: 100%;
+    }
+    .col-lg-11 {
+        width: 91.66666666%;
+    }
+    .col-lg-10 {
+        width: 83.33333333%;
+    }
+    .col-lg-9 {
+        width: 75%;
+    }
+    .col-lg-8 {
+        width: 66.66666666%;
+    }
+    .col-lg-7 {
+        width: 58.33333333%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-5 {
+        width: 41.66666666%;
+    }
+    .col-lg-4 {
+        width: 33.33333333%;
+    }
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-2 {
+        width: 16.66666666%;
+    }
+    .col-lg-1 {
+        width: 8.3333333%;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .col-xlg-12 {
+        width: 100%;
+    }
+    .col-xlg-11 {
+        width: 91.66666666%;
+    }
+    .col-xlg-10 {
+        width: 83.33333333%;
+    }
+    .col-xlg-9 {
+        width: 75%;
+    }
+    .col-xlg-8 {
+        width: 66.66666666%;
+    }
+    .col-xlg-7 {
+        width: 58.33333333%;
+    }
+    .col-xlg-6 {
+        width: 50%;
+    }
+    .col-xlg-5 {
+        width: 41.66666666%;
+    }
+    .col-xlg-4 {
+        width: 33.33333333%;
+    }
+    .col-xlg-3 {
+        width: 25%;
+    }
+    .col-xlg-2 {
+        width: 16.66666666%;
+    }
+    .col-xlg-1 {
+        width: 8.3333333%;
+    }
 }
