@@ -1,6 +1,7 @@
 const d = document;
 
 function jsonGenerator() {
+
     let jsonObjet = {};
     let id = d.getElementById("id").value;
     let nombre = d.getElementById("nombre-completo").value;
