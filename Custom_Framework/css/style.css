@@ -232,7 +232,7 @@ CONTAINERS
 ******************/
 
 .container {
-    min-width: 90%;
+    max-width: 90%;
     width: var(--width-cotainer);
     margin: 20px auto;
     /* hidden elements overflow page */
@@ -305,7 +305,7 @@ COMPONENTS
     background-color: lightblue;
 }
 
-.btn.cancel {
+.cancel {
     background-color: tomato;
 }
 
@@ -427,6 +427,10 @@ HELPER´S
 
 .txt-right {
     text-align: right;
+}
+
+.content-center {
+    justify-content: center;
 }
 
 
