@@ -206,7 +206,7 @@ VAR'S
 :root {
     --font: 'Open Sans', sans-serif;
     --background: #f2f2f2;
-    --width-cotainer: 1200px;
+    --width-cotainer: 100vw;
 }
 
 
@@ -253,6 +253,8 @@ COMPONENTS
 ******************/
 
 .card {
+    display: flex;
+    flex-wrap: wrap;
     padding: 40px;
     background: white;
     border-radius: 3px;
