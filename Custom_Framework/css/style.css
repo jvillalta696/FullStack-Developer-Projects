@@ -374,6 +374,63 @@ form .input:focus {
 
 
 /*****************
+HELPER´S
+******************/
+
+.no-margin {
+    margin: 0px;
+}
+
+.no-margin-top {
+    margin-top: 0px;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0px;
+}
+
+.no-margin-left {
+    margin-left: 0px;
+}
+
+.no-margin-right {
+    margin-right: 0px;
+}
+
+.margin {
+    margin: 20px;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.margin-left {
+    margin-left: 20px;
+}
+
+.margin-right {
+    margin-right: 20px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+
+/*****************
 MEDIA QUERY
 ******************/
 
